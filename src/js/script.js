@@ -34,7 +34,32 @@ const displayContentServices = function (e) {
   document.querySelector(`.services-content-${clicked.dataset.tab}`).classList.remove("hidden");
 };
 
+const showContentSubTitle = function (e) {
+  e.preventDefault();
+
+  const hoverd = e.target.closest(".titles");
+  if (!hoverd) return;
+
+  // Show active content
+  document.querySelector(`.sub-title-${hoverd.dataset.title}`).classList.add("block");
+  document.querySelector(`.sub-title-${hoverd.dataset.title}`).classList.remove("hidden");
+};
+
+const hideContentSubTitle = function (e) {
+  e.preventDefault();
+
+  const hoverd = e.target.closest(".titles");
+  if (!hoverd) return;
+
+  // Remove active content
+  subTitles.forEach((el) => el.classList.add("hidden"));
+  subTitles.forEach((el) => el.classList.remove("block"));
+};
+
 /*******************************************************/
 // Handlers
 btnHamburger.addEventListener("click", toggleMenu);
 tabsContainer.addEventListener("click", displayContentServices);
+
+titlesContainer.addEventListener("mouseover", showContentSubTitle);
+titlesContainer.addEventListener("mouseout", hideContentSubTitle);
