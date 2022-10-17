@@ -34,6 +34,13 @@ const displayContentServices = function (e) {
   document.querySelector(`.services-content-${clicked.dataset.tab}`).classList.remove("hidden");
 };
 
+const hoverHandler = function (e) {
+  const hoverd = e.target.closest(".tabs");
+  if (!hoverd) return;
+
+  hoverd.querySelector("img").style.opacity = this;
+};
+
 const showContentSubTitle = function (e) {
   e.preventDefault();
 
@@ -60,6 +67,9 @@ const hideContentSubTitle = function (e) {
 // Handlers
 btnHamburger.addEventListener("click", toggleMenu);
 tabsContainer.addEventListener("click", displayContentServices);
+
+tabsContainer.addEventListener("mouseover", hoverHandler.bind(1));
+tabsContainer.addEventListener("mouseout", hoverHandler.bind(0.35));
 
 titlesContainer.addEventListener("mouseover", showContentSubTitle);
 titlesContainer.addEventListener("mouseout", hideContentSubTitle);
