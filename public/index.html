@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./build/tailwind.css" />
-    <script defer src="/src/js/script.js"></script>
+    <script defer type="module" src="/src/js/script.js"></script>
     <title>Tapsi-DEMO</title>
   </head>
   <body class="bg-white font-dana text-black">
@@ -89,13 +89,13 @@
         <!-- BACKGROUND-MOBILE -->
         <img
           class="h-[480px] w-full object-cover md:hidden"
-          src="https://tapsi.ir/images/home/banner-mobile.webp"
+          src="/src/img/banner-mobile.webp"
           alt="city-background"
         />
         <!-- BACKGROUND-DESKTOP -->
         <img
           class="hidden h-[440px] w-full object-cover md:flex"
-          src="https://tapsi.ir/images/home/banner.webp"
+          src="/src/img/banner.webp"
           alt="city-background"
         />
         <!-- CARD -->
@@ -143,7 +143,7 @@
         <!-- BANNER-PHONE -->
         <img
           class="absolute left-[10%] top-1/3 hidden w-96 xl:block"
-          src="https://tapsi.ir/images/home/mockup-phone.webp"
+          src="/src/img/mockup-phone.webp"
           alt="phone"
         />
       </section>
@@ -161,7 +161,7 @@
             <div data-tab="1" class="tabs inline-block cursor-pointer px-1.5">
               <img
                 class="mb-3 w-20 opacity-[0.35] md:w-24"
-                src="https://tapsi.ir/images/home/cc-classic.png"
+                src="/src/img/icons/cc-classic.png"
                 alt="tapsi-classic-icon"
               />
               <p class="text-center">تپسی کلاسیک</p>
@@ -170,7 +170,7 @@
             <div data-tab="2" class="tabs inline-block cursor-pointer px-1.5">
               <img
                 class="mb-3 w-20 opacity-[0.35] md:w-24"
-                src="https://tapsi.ir/images/home/cc-tel.png"
+                src="/src/img/icons/cc-tel.png"
                 alt="tel-service-icon"
               />
               <p class="text-center">تپسی تلفنی</p>
@@ -179,7 +179,7 @@
             <div data-tab="3" class="tabs inline-block cursor-pointer px-1.5">
               <img
                 class="mb-3 w-20 opacity-[0.35] md:w-24"
-                src="https://tapsi.ir/images/home/cc-line.png"
+                src="/src/img/icons/cc-line.png"
                 alt="line-service-icon"
               />
               <p class="text-center">تپسی لاین</p>
@@ -188,7 +188,7 @@
             <div data-tab="4" class="tabs inline-block cursor-pointer px-1.5">
               <img
                 class="mb-3 w-20 opacity-[0.35] md:w-24"
-                src="https://tapsi.ir/images/home/cc-motopeyk.png"
+                src="/src/img/icons/cc-motopeyk.png"
                 alt="motopeyk-service-icon"
               />
               <p class="text-center">موتوپیک</p>
@@ -197,7 +197,7 @@
             <div data-tab="5" class="tabs inline-block cursor-pointer px-1.5">
               <img
                 class="mb-3 w-20 opacity-[0.35] md:w-24"
-                src="https://tapsi.ir/images/home/cc-autopeyk.png"
+                src="/src/img/icons/cc-autopeyk.png"
                 alt="autopeyk-service-icon"
               />
               <p class="text-center">اوتوپیک</p>
@@ -206,7 +206,7 @@
             <div data-tab="6" class="tabs inline-block cursor-pointer px-1.5">
               <img
                 class="mb-3 w-20 opacity-[0.35] md:w-24"
-                src="https://tapsi.ir/images/home/cc-plus.png"
+                src="/src/img/icons/cc-plus.png"
                 alt="plus-service-icon"
               />
               <p class="text-center">تپسی پلاس</p>
@@ -215,7 +215,7 @@
             <div data-tab="7" class="tabs inline-block cursor-pointer px-1.5">
               <img
                 class="mb-3 w-20 opacity-[0.35] md:w-24"
-                src="https://tapsi.ir/images/home/cc-taxi.png"
+                src="/src/img/icons/cc-taxi.png"
                 alt="taxi-service-icon"
               />
               <p class="text-center">تاکسی</p>
@@ -224,7 +224,7 @@
             <div data-tab="8" class="tabs inline-block cursor-pointer px-1.5">
               <img
                 class="mb-3 w-20 opacity-[0.35] md:w-24"
-                src="https://tapsi.ir/images/home/cc-hamyar.png"
+                src="/src/img/icons/cc-hamyar.png"
                 alt="hamyar-service-icon"
               />
               <p class="text-center">همیار</p>
@@ -251,10 +251,7 @@
                 <div
                   class="hidden w-full p-8 pl-0 md:flex md:basis-1/2 md:items-center md:justify-between"
                 >
-                  <img
-                    src="https://tapsi.ir/images/home/illus-classic.webp"
-                    alt="tapsi-classic-illus"
-                  />
+                  <img src="/src/img/illus/illus-classic.webp" alt="tapsi-classic-illus" />
                 </div>
               </div>
 
@@ -274,10 +271,7 @@
                 <div
                   class="hidden w-full p-8 pl-0 md:flex md:basis-1/2 md:items-center md:justify-between"
                 >
-                  <img
-                    src="https://tapsi.ir/images/home/illus-tel.webp"
-                    alt="tapsi-classic-illus"
-                  />
+                  <img src="/src/img/illus/illus-tel.webp" alt="tapsi-tel-illus" />
                 </div>
               </div>
 
@@ -297,10 +291,7 @@
                 <div
                   class="hidden w-full p-8 pl-0 md:flex md:basis-1/2 md:items-center md:justify-between"
                 >
-                  <img
-                    src="https://tapsi.ir/images/home/illus-line.webp"
-                    alt="tapsi-classic-illus"
-                  />
+                  <img src="/src/img/illus/illus-line.webp" alt="tapsi-line-illus" />
                 </div>
               </div>
 
@@ -320,10 +311,7 @@
                 <div
                   class="hidden w-full p-8 pl-0 md:flex md:basis-1/2 md:items-center md:justify-between"
                 >
-                  <img
-                    src="https://tapsi.ir/images/home/illus-motopeyk.webp"
-                    alt="tapsi-classic-illus"
-                  />
+                  <img src="/src/img/illus/illus-motopeyk.webp" alt="tapsi-motopeyk-illus" />
                 </div>
               </div>
 
@@ -343,10 +331,7 @@
                 <div
                   class="hidden w-full p-8 pl-0 md:flex md:basis-1/2 md:items-center md:justify-between"
                 >
-                  <img
-                    src="https://tapsi.ir/images/home/illus-autopeyk.webp"
-                    alt="tapsi-classic-illus"
-                  />
+                  <img src="/src/img/illus/illus-autopeyk.webp" alt="tapsi-autopeyk-illus" />
                 </div>
               </div>
 
@@ -366,10 +351,7 @@
                 <div
                   class="hidden w-full p-8 pl-0 md:flex md:basis-1/2 md:items-center md:justify-between"
                 >
-                  <img
-                    src="https://tapsi.ir/images/home/illus-plus.webp"
-                    alt="tapsi-classic-illus"
-                  />
+                  <img src="/src/img/illus/illus-plus.webp" alt="tapsi-plus-illus" />
                 </div>
               </div>
 
@@ -389,10 +371,7 @@
                 <div
                   class="hidden w-full p-8 pl-0 md:flex md:basis-1/2 md:items-center md:justify-between"
                 >
-                  <img
-                    src="https://tapsi.ir/images/home/illus-taxi.webp"
-                    alt="tapsi-classic-illus"
-                  />
+                  <img src="/src/img/illus/illus-taxi.webp" alt="tapsi-taxi-illus" />
                 </div>
               </div>
 
@@ -411,10 +390,7 @@
                 <div
                   class="hidden w-full p-8 pl-0 md:flex md:basis-1/2 md:items-center md:justify-between"
                 >
-                  <img
-                    src="https://tapsi.ir/images/home/illus-hamyar.webp"
-                    alt="tapsi-classic-illus"
-                  />
+                  <img src="/src/img/illus/illus-hamyar.webp" alt="tapsi-hamyar-illus" />
                 </div>
               </div>
             </div>
@@ -426,11 +402,7 @@
       <section class="py-[10%] px-[2%] md:py-0">
         <div class="flex flex-col py-[10%] px-4 md:flex-row-reverse md:gap-16 md:px-[10%] md:pb-0">
           <div class="mb-12 flex items-center md:basis-1/2">
-            <img
-              class="w-full pr-10 md:pr-20"
-              src="https://tapsi.ir/images/home/i-mac.webp"
-              alt=""
-            />
+            <img class="w-full pr-10 md:pr-20" src="/src/img/i-mac.webp" alt="" />
           </div>
           <div class="md:basis-1/2">
             <h2 class="mb-5 text-xl font-semibold md:text-4xl">خدمات تپسی ویژه کسب‌وکارها</h2>
@@ -457,11 +429,7 @@
 
         <div class="flex flex-col py-[10%] px-4 md:flex-row md:gap-16 md:px-[10%]">
           <div class="mb-12 flex items-center md:basis-1/2">
-            <img
-              class="w-full px-5"
-              src="https://tapsi.ir/images/home/macbook.webp"
-              alt="corporate"
-            />
+            <img class="w-full px-5" src="/src/img/macbook.webp" alt="corporate" />
           </div>
           <div class="md:basis-1/2">
             <h2 class="mb-6 text-xl font-semibold md:text-4xl">خرید کد اعتبار تپسی</h2>
@@ -522,11 +490,7 @@
         class="py-10 px-[6%] text-[#4d4d4d] md:grid md:grid-cols-2 md:grid-rows-1 md:gap-x-[8%] md:px-[10%] xl:pt-28"
       >
         <div class="md:col-start-2 md:col-end-3 md:row-start-1 md:row-end-2">
-          <img
-            class="mb-12 w-full rounded-xl"
-            src="https://tapsi.ir/images/home/driver.webp"
-            alt="driver"
-          />
+          <img class="mb-12 w-full rounded-xl" src="/src/img/driver.webp" alt="driver" />
         </div>
         <div class="md:col-start-1 md:col-end-2 md:row-start-1 md:row-end-2">
           <div>
@@ -607,9 +571,21 @@
           <div
             class="mb-6 flex cursor-pointer flex-col rounded p-2 pb-6 hover:shadow-xl md:p-2 lg:p-6"
           >
+            <img class="mb-4 rounded-xl" src="/src/img/20221016-Blog-BNPL-1.jpg" alt="تپسی بک" />
+            <h3 class="mb-4 text-[#9b9b9b] md:text-[22px]">سرویس پرداخت اعتباری تپسی فعال شد</h3>
+            <p class="text-sm text-[#333] line-clamp-3 md:text-lg">
+              سرویس پرداخت اعتباری تپسی (تپسی‌پی) سرویسی است که به شما امکان می‌دهد هزینه سفرهایتان
+              با تپسی را در پایان هر ماه پرداخت کنید. پرداخت اعتباری یکی از کاربردی‌ترین سرویس‌ها یا
+              خدماتی است که در سال‌های اخیر در دسترس کاربران اپلیکشین‌های گوناگون در ایران و جهان
+              قرار گرفته است. این سرویس به شما امکان می‌دهد تا […]
+            </p>
+          </div>
+          <div
+            class="mb-6 flex cursor-pointer flex-col rounded p-2 pb-6 hover:shadow-xl md:p-2 lg:p-6"
+          >
             <img
               class="mb-4 rounded-xl"
-              src="https://blog.tapsi.ir/wp-content/uploads/2022/08/peyk-scaled-1-1130x580-2.jpg"
+              src="/src/img/peyk-scaled-1-1130x580-2.jpg"
               alt="تپسی پک"
             />
             <h3 class="mb-4 text-[#9b9b9b] md:text-[22px]">
@@ -627,7 +603,7 @@
           >
             <img
               class="mb-4 rounded-xl"
-              src="https://blog.tapsi.ir/wp-content/uploads/2022/04/etehadie-no-logo-scaled.jpg"
+              src="/src/img/etehadie-no-logo-scaled.jpg"
               alt="انتخابات اتحادیه"
             />
             <h3 class="mb-4 text-[#9b9b9b] md:text-[22px]">
@@ -638,24 +614,6 @@
               درباره‌ من من میلاد منشی پور، مدیرعامل و هم بنیان‌گذار تپسی هستم؛ سال 1394 پس از یک
               دهه فعالیت در خارج از کشور در حوزه مشاوره مدیریت، به ایران برگشتم و به همراه دو نفر از
               دوستانم، سامانه درخواست آنلاین خودرو […]
-            </p>
-          </div>
-          <div
-            class="mb-6 flex cursor-pointer flex-col rounded p-2 pb-6 hover:shadow-xl md:p-2 lg:p-6"
-          >
-            <img
-              class="mb-4 rounded-xl"
-              src="https://blog.tapsi.ir/wp-content/uploads/2022/03/A68CB9F1-AA36-4B75-99B7-DE475A5FFBDF.jpeg"
-              alt="تپسی بک"
-            />
-            <h3 class="mb-4 text-[#9b9b9b] md:text-[22px]">
-              تخفیف ویژه دیجی‌کالا جت برای کاربران تپسی
-            </h3>
-            <p class="text-sm text-[#333] line-clamp-3 md:text-lg">
-              (منقضی شده) سوپرمارکت آنلاین «دیجی‌کالا جت» با ارسال سریع محصولات سوپرمارکتی شروع به
-              کار کرده است و سفارش‌های آنلاین سوپرمارکتی را از فروشگاه‌های زنجیره‌ای معتبر و یا
-              فروشگاه‌های منتخب شهرهای تهران، کرج، اصفهان، قم و مشهد تامین می‌کند. این مجموعه برای
-              شما کاربران تپسی تخفیف ویژه‌ای درنظر گرفته است و با استفاده از کد زیر […]
             </p>
           </div>
         </div>
@@ -718,12 +676,12 @@
       <div class="flex items-start gap-x-[5%] md:gap-x-[10%]">
         <img
           class="h-auto w-32 rounded-xl bg-white py-1 md:my-8 md:w-20 md:py-4"
-          src="https://tapsi.ir/images/etehadiye.png"
+          src="/src/img/etehadiye.png"
           alt="trust logo"
         />
         <img
           class="h-auto w-32 rounded-xl bg-white py-1 md:my-8 md:w-20 md:py-4"
-          src="https://tapsi.ir/images/etehadiye.png"
+          src="/src/img/etehadiye.png"
           alt="trust logo"
         />
       </div>
@@ -737,29 +695,13 @@
         <div class="flex justify-evenly md:justify-between">
           <img
             class="text:bg-red-600 h-5 cursor-pointer"
-            src="https://tapsi.ir/images/contact/facebook.svg"
+            src="/src/img/icons/facebook.svg"
             alt="facebook"
           />
-          <img
-            class="h-5 cursor-pointer"
-            src="https://tapsi.ir/images/contact/instagram.svg"
-            alt="instagram"
-          />
-          <img
-            class="h-5 cursor-pointer"
-            src="https://tapsi.ir/images/contact/twitter.svg"
-            alt="twitter"
-          />
-          <img
-            class="h-5 cursor-pointer"
-            src="https://tapsi.ir/images/contact/linkedin.svg"
-            alt="linkdin"
-          />
-          <img
-            class="h-5 cursor-pointer"
-            src="https://tapsi.ir/images/contact/telegram.svg"
-            alt="telegram"
-          />
+          <img class="h-5 cursor-pointer" src="/src/img/icons/instagram.svg" alt="instagram" />
+          <img class="h-5 cursor-pointer" src="/src/img/icons/twitter.svg" alt="twitter" />
+          <img class="h-5 cursor-pointer" src="/src/img/icons/linkedin.svg" alt="linkdin" />
+          <img class="h-5 cursor-pointer" src="/src/img/icons/telegram.svg" alt="telegram" />
         </div>
       </div>
     </footer>
