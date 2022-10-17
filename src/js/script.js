@@ -19,6 +19,22 @@ const toggleMenu = function (e) {
   navMobile.classList.toggle("hidden");
 };
 
+const displayContentServices = function (e) {
+  e.preventDefault();
+
+  const clicked = e.target.closest(".tabs");
+  if (!clicked) return;
+
+  // Remove active content
+  servicesContent.forEach((el) => el.classList.add("hidden"));
+  servicesContent.forEach((el) => el.classList.remove("flex"));
+
+  // Show active content
+  document.querySelector(`.services-content-${clicked.dataset.tab}`).classList.add("flex");
+  document.querySelector(`.services-content-${clicked.dataset.tab}`).classList.remove("hidden");
+};
+
 /*******************************************************/
 // Handlers
 btnHamburger.addEventListener("click", toggleMenu);
+tabsContainer.addEventListener("click", displayContentServices);
