@@ -1185,6 +1185,9 @@ div.c-hamburger > .c-hamburger-inner{
 .mb-5{
   margin-bottom: 1.25rem;
 }
+.mt-4{
+  margin-top: 1rem;
+}
 .block{
   display: block;
 }
@@ -1206,6 +1209,9 @@ div.c-hamburger > .c-hamburger-inner{
 .h-\[440px\]{
   height: 440px;
 }
+.h-12{
+  height: 3rem;
+}
 .w-full{
   width: 100%;
 }
@@ -1217,6 +1223,12 @@ div.c-hamburger > .c-hamburger-inner{
 }
 .w-20{
   width: 5rem;
+}
+.w-0\.5{
+  width: 0.125rem;
+}
+.w-0{
+  width: 0px;
 }
 .-translate-x-1\/2{
   --tw-translate-x: -50%;
@@ -1250,6 +1262,11 @@ div.c-hamburger > .c-hamburger-inner{
 .gap-x-7{
   -moz-column-gap: 1.75rem;
        column-gap: 1.75rem;
+}
+.space-y-8 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2rem * var(--tw-space-y-reverse));
 }
 .overflow-auto{
   overflow: auto;
@@ -1298,6 +1315,9 @@ div.c-hamburger > .c-hamburger-inner{
 .bg-gradient-to-tr{
   background-image: linear-gradient(to top right, var(--tw-gradient-stops));
 }
+.bg-\[url\(\'\/src\/img\/parallax\.jpeg\'\)\]{
+  background-image: url('/src/img/parallax.jpeg');
+}
 .from-\[\#171a3cb3\]{
   --tw-gradient-from: #171a3cb3;
   --tw-gradient-to: rgb(23 26 60 / 0);
@@ -1305,6 +1325,18 @@ div.c-hamburger > .c-hamburger-inner{
 }
 .to-\[\#171a3c4d\]{
   --tw-gradient-to: #171a3c4d;
+}
+.bg-cover{
+  background-size: cover;
+}
+.bg-fixed{
+  background-attachment: fixed;
+}
+.bg-center{
+  background-position: center;
+}
+.bg-no-repeat{
+  background-repeat: no-repeat;
 }
 .fill-black{
   fill: #000;
@@ -1384,6 +1416,18 @@ div.c-hamburger > .c-hamburger-inner{
   padding-left: 2rem;
   padding-right: 2rem;
 }
+.py-8{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.px-2\.5{
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+}
+.px-2{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
 .pb-4{
   padding-bottom: 1rem;
 }
@@ -1418,6 +1462,10 @@ div.c-hamburger > .c-hamburger-inner{
 }
 .text-xl{
   font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+.text-lg{
+  font-size: 1.125rem;
   line-height: 1.75rem;
 }
 .font-bold{
@@ -1525,6 +1573,9 @@ div.c-hamburger > .c-hamburger-inner{
   .md\:hidden{
     display: none;
   }
+  .md\:h-44{
+    height: 11rem;
+  }
   .md\:w-\[530px\]{
     width: 530px;
   }
@@ -1533,6 +1584,9 @@ div.c-hamburger > .c-hamburger-inner{
   }
   .md\:basis-1\/2{
     flex-basis: 50%;
+  }
+  .md\:basis-1\/4{
+    flex-basis: 25%;
   }
   .md\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1552,11 +1606,19 @@ div.c-hamburger > .c-hamburger-inner{
   .md\:justify-between{
     justify-content: space-between;
   }
+  .md\:justify-around{
+    justify-content: space-around;
+  }
   .md\:gap-\[5\%\]{
     gap: 5%;
   }
   .md\:gap-16{
     gap: 4rem;
+  }
+  .md\:space-y-0 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
   .md\:p-4{
     padding: 1rem;
@@ -1578,6 +1640,9 @@ div.c-hamburger > .c-hamburger-inner{
   .md\:pr-20{
     padding-right: 5rem;
   }
+  .md\:pr-5{
+    padding-right: 1.25rem;
+  }
   .md\:text-5xl{
     font-size: 3rem;
     line-height: 1;
@@ -1597,8 +1662,15 @@ div.c-hamburger > .c-hamburger-inner{
     font-size: 1rem;
     line-height: 1.5rem;
   }
+  .md\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
   .md\:font-medium{
     font-weight: 500;
+  }
+  .md\:font-bold{
+    font-weight: 700;
   }
   .md\:leading-\[34px\]{
     line-height: 34px;
