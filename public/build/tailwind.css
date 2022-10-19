@@ -1488,10 +1488,6 @@ div.c-hamburger > .c-hamburger-inner{
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
-.py-10{
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-}
 .px-\[6\%\]{
   padding-left: 6%;
   padding-right: 6%;
@@ -1517,8 +1513,23 @@ div.c-hamburger > .c-hamburger-inner{
 .pr-10{
   padding-right: 2.5rem;
 }
+.pb-10{
+  padding-bottom: 2.5rem;
+}
+.pt-16{
+  padding-top: 4rem;
+}
 .pb-6{
   padding-bottom: 1.5rem;
+}
+.pt-14{
+  padding-top: 3.5rem;
+}
+.pt-12{
+  padding-top: 3rem;
+}
+.pt-72{
+  padding-top: 18rem;
 }
 .text-center{
   text-align: center;
@@ -1645,12 +1656,6 @@ div.c-hamburger > .c-hamburger-inner{
 .hover\:bg-\[\#1974df\]:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(25 116 223 / var(--tw-bg-opacity));
-}
-.hover\:fill-\[\#FF5B35\]:hover{
-  fill: #FF5B35;
-}
-.hover\:fill-black:hover{
-  fill: #000;
 }
 .hover\:text-\[\#ff5722\]:hover{
   --tw-text-opacity: 1;

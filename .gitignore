@@ -2,3 +2,5 @@ node_modules
 kklkl.html
 jsss.js
 dist
+.vscode
+.parcel-cache

@@ -10,8 +10,22 @@ const servicesContent = document.querySelectorAll(".services-content");
 const titlesContainer = document.querySelector(".titles-container");
 const subTitles = document.querySelectorAll(".sub-titles");
 
+const logo = document.querySelector(".logo");
+const logoBars = document.querySelector(".logo-bars");
+const logoname = document.querySelector(".logo-name");
+
 /*******************************************************/
 // Functions
+const changeColorLogo = function () {
+  logoBars.style.fill = "#000";
+  logoname.style.fill = "#FF5B35";
+};
+
+const changeBackColorLogo = function () {
+  logoBars.style.fill = "#FF5B35";
+  logoname.style.fill = "#000";
+};
+
 const toggleMenu = function (e) {
   e.preventDefault();
 
@@ -65,7 +79,11 @@ const hideContentSubTitle = function (e) {
 
 /*******************************************************/
 // Handlers
+logo.addEventListener("mouseover", changeColorLogo);
+logo.addEventListener("mouseout", changeBackColorLogo);
+
 btnHamburger.addEventListener("click", toggleMenu);
+
 tabsContainer.addEventListener("click", displayContentServices);
 
 tabsContainer.addEventListener("mouseover", hoverHandler.bind(1));
