@@ -1,3 +1,3 @@
 # Tapsi DEMO
 
-A perfect clone of tapsi website [tapsi.ir](https://www.tapsi.ir)
+A perfect clone of [tapsi](https://www.tapsi.ir) website
