@@ -1,6 +1,6 @@
 @import url("/src/css/font.css");
 /*
-! tailwindcss v3.1.8 | MIT License | https://tailwindcss.com
+! tailwindcss v3.2.1 | MIT License | https://tailwindcss.com
 */
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -303,6 +303,10 @@ img,
 video {
   max-width: 100%;
   height: auto;
+}
+/* Make elements with the HTML hidden attribute stay hidden by default */
+[hidden] {
+  display: none;
 }
 *, ::before, ::after{
   --tw-border-spacing-x: 0;
@@ -1516,20 +1520,11 @@ div.c-hamburger > .c-hamburger-inner{
 .pb-10{
   padding-bottom: 2.5rem;
 }
-.pt-16{
-  padding-top: 4rem;
-}
-.pb-6{
-  padding-bottom: 1.5rem;
-}
 .pt-14{
   padding-top: 3.5rem;
 }
-.pt-12{
-  padding-top: 3rem;
-}
-.pt-72{
-  padding-top: 18rem;
+.pb-6{
+  padding-bottom: 1.5rem;
 }
 .text-center{
   text-align: center;
